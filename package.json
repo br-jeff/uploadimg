@@ -1,0 +1,24 @@
+{
+  "name": "uploadimg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalavh/uploadimg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalavh/uploadimg/issues"
+  },
+  "homepage": "https://github.com/kalavh/uploadimg#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
+  }
+}
