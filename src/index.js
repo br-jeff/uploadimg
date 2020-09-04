@@ -2,12 +2,17 @@ const express = require('express')
 const multer = require('multer')
 const ejs = require('ejs')
 const path = require('path')
+const port = 3000
 
 const app = express()
 
-app.get("/",(req,res) => res.send(`Hey I'm here`))
+app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname,'views'))
 
-const port = 3000
+app.use(express.static('./public'))
+
+
+app.get('/', (req, res) => res.render('index') ) 
 
 
 app.listen(port,() => console.log(`server on ${port}`))
